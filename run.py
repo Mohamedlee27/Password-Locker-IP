@@ -49,3 +49,17 @@ def main():
     print('Please Follow the instructions and Choose the following short codes and key them in to proceed: ')
     print('ca - to create an account')
     print('lg - to log in to your account')
+
+    short_code = input().lower()
+    if short_code == 'ca':
+        print('username')
+        username = input()
+        print('\n')
+        print('password')
+        password = input()
+        print('\n')
+        save_account(create_account(username, password))    # create and save new account
+        print('\n')
+        print(f'Congratulations {username}, your account has been created successfully')
+        print('\n')
+

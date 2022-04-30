@@ -23,3 +23,7 @@ class testUser(unittest.TestCase):
 
         self.assertEqual(self.new_user.username,'Lee')
         self.assertEqual(self.new_user.password,'Flash123')
+
+
+     if __name__ == '__main__':
+      unittest.main()

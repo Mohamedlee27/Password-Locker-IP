@@ -13,7 +13,7 @@ def save_account(account):
     
 def generate_password(account):
     account.generate_password()
-    
+
 def save_multiple_users(account): #function that saves multiple credentials
 
     account.save_multiple_users()
@@ -23,3 +23,11 @@ def my_accounts():   #function that displays credentials
 
 def delete_accounts(account):  #function that deletes credentials
     account.delete_accounts()
+
+def create_credential(username,password):  #function that creates new credentials
+    new_credential = User(username,password)
+    return new_credential
+
+def save_user(credential):  #function that saves credentials
+
+    credential.save_user()

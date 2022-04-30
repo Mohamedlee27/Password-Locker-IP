@@ -7,3 +7,19 @@ class testUser(unittest.TestCase):
 
 
         self.new_user = User('Lee','Flash123')
+    
+     def tearDown(self):
+
+
+
+        User.user_list = []
+
+
+
+     def test_init(self):
+
+
+
+
+        self.assertEqual(self.new_user.username,'Lee')
+        self.assertEqual(self.new_user.password,'Flash123')

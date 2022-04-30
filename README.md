@@ -7,3 +7,12 @@ This is a created and coded application that enables users to search and find ac
 
 ## Technologies used
 Python 3.10.8
+
+## HOW TO INSTALL
+Simply clone the repository to your pc
+
+## Requirements
+A functional pc
+Python
+Pip
+Internet

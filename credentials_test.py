@@ -25,3 +25,6 @@ class testCredentials(unittest.TestCase):
       self.assertEqual(self.new_credentials.account,'Facebook')
       self.assertEqual(self.new_credentials.username,'Lee')
       self.assertEqual(self.new_credentials.password,'Flash123')
+
+      if __name__ == '__main__':
+         unittest.main()

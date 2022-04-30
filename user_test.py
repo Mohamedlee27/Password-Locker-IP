@@ -42,6 +42,39 @@ class testUser(unittest.TestCase):
         self.assertEqual(len(User.user_list), 2)
 
 
+     def test_see_all_accounts(self):
+
+
+
+
+        self.assertEqual(User.my_credentials(),User.user_list)
+
+
+     def test_find_account(self):
+
+
+
+
+
+        self.new_user.save_user()
+        test_user = User('Lee','Flash123')
+        test_user.save_user()
+        found_account = User.find_by_user_name('Lee')
+        self.assertEqual(found_account.password,test_user.password)
+
+
+     def test_delete_account(self):
+
+
+
+
+
+        self.new_user.save_user()
+        test_user = User('username','password')
+        test_user.save_user()
+        self.new_user.delete_user()
+        self.assertEqual(len(User.user_list), 1)
+
 
      if __name__ == '__main__':
       unittest.main()

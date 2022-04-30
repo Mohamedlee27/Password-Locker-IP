@@ -29,3 +29,27 @@ class Credentials:
             if credential.account == account and credential.username == username and credential.password == password:
                 return True
         return False 
+
+    def generate_password(self):
+        digits = "0123456789"
+        symbols = "()[],;:_-/?#+"
+        uppercase_letters = "ABCDEFGHIJKLMONPQRSTUVWXYZ"
+        lowercase_letters = uppercase_letters.lower()
+        upper, lower, nums, syms = True,True,True,True
+        all = ''
+        if upper:
+            all += uppercase_letters
+        if lower:
+            all += lowercase_letters
+        if nums:
+            all += digits
+        if syms:
+            all += symbols
+
+        length = 15
+        amount = 5
+
+        for x in range(amount):
+         password = "".join(random.sample(all,length))
+
+        return password 

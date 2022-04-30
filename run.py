@@ -14,20 +14,32 @@ def save_account(account):
 def generate_password(account):
     account.generate_password()
 
-def save_multiple_users(account): #function that saves multiple credentials
+def save_multiple_users(account): 
 
     account.save_multiple_users()
 
-def my_accounts():   #function that displays credentials
+def my_accounts():   
     return User.my_accounts()  
 
-def delete_accounts(account):  #function that deletes credentials
+def delete_accounts(account):  
     account.delete_accounts()
 
-def create_credential(username,password):  #function that creates new credentials
+def create_credential(username,password):  
     new_credential = User(username,password)
     return new_credential
 
-def save_user(credential):  #function that saves credentials
+def save_user(credential):  
 
     credential.save_user()
+
+def save_multiple_users(account): 
+
+    account.save_multiple_users()
+
+def my_accounts():   
+    return User.my_accounts()  
+
+def delete_accounts(account):  
+    account.delete_accounts()
+
+

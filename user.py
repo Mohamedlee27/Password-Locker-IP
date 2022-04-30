@@ -32,3 +32,22 @@ class User:
 
 
          User.user_list.remove(self)
+
+
+         
+    @classmethod
+    def my_credentials(cls):
+
+
+
+        return cls.user_list
+
+    @classmethod
+    def find_by_user_name(cls,username):
+
+
+
+        for account in cls.user_list:
+            if account.username == username:
+
+                return account

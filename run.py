@@ -43,3 +43,9 @@ def delete_accounts(account):
     account.delete_accounts()
 
 
+
+def main():
+    print('Greetings and Welcome to PasswordLock!!!')
+    print('Please Follow the instructions and Choose the following short codes and key them in to proceed: ')
+    print('ca - to create an account')
+    print('lg - to log in to your account')

@@ -66,3 +66,7 @@ class testCredentials(unittest.TestCase):
 
         self.new_credentials.gen_password()
         self.assertEqual(self.new_credentials.password, 'Flash123')
+
+        
+    if __name__ == '__main__':
+       unittest.main()

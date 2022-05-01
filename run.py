@@ -59,3 +59,7 @@ def main():
         print('fc - to find credentials')
         my_short_code = input().lower()
         print('\n')    
+
+
+if __name__ == '__main__':
+      main()

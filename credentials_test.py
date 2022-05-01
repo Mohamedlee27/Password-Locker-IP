@@ -8,8 +8,9 @@ class testCredentials(unittest.TestCase):
     '''
 
     def setUp(self):
-
+     '''Test a must to be initialized properly'''
      self.new_credentials=Credentials("Facebook",'Lee','Flash123')
+
 
     def test_init(self):
       '''method tests for proper initialization'''

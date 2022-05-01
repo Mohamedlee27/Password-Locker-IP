@@ -4,15 +4,15 @@ from user import User
 class testUser(unittest.TestCase):
 
      def setUp(self):
-
+        '''Test a must to be initialized properly'''
 
         self.new_user = User('Lee','Flash123')
     
+
+
      def tearDown(self):
-
-
-
-        User.user_list = []
+      '''A code to be executed to clean up after each test case has run'''
+      User.user_list = []
 
 
 

@@ -48,9 +48,9 @@ class testCredentials(unittest.TestCase):
     def test_login(self):
         ''' tests to get inside account'''
         self.new_credentials.save_credentials()
-        login = Credentials('Lee','Flash123')
+        login = Credentials('Facebook','Lee','Flash123')
         login.save_credentials()
-        check_account = Credentials.check_account('Lee', 'Flash123')
+        check_account = Credentials.check_account('Facebook','Lee', 'Flash123')
         self.assertTrue(check_account)
 
 
